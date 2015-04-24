@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	<head>
+		<title>Assignment 06 - Eduardo Castro</title>
+		<script src="js/assignment07.js" type="text/javascript"></script>
+        <link rel = "stylesheet" type = "text/css" href = "styles/assignment07.css" />
+	</head>
+
+	<body>
+		<h1>Assignment 06</h1>
+		<hr>
+		<select onchange="MenuSelection()" id="menu">
+			<option>Please Select an Option</option>
+			<option>Create Category</option>
+			<option>Update Category</option>
+			<option>Delete Category</option>
+			<option>List Category</option>
+			<option>About Me</option>
+		</select>
+		<hr>
+		
+		<div id = "output"></div>
+
+		<section id = "createCategory" >
+			<h1>Create Category</h1>
+			<hr>
+			<br>
+			<label>Please Enter Category Name:</label>
+			<input type="text" id="CNameCreateCategory">
+			<br>
+			<label>Please Enter the Category Description:</label>
+			<input type="text" id="CDescriptionCreateCategory">
+			<br>
+			<hr>
+			<button onclick="createCategory()" id="createCategory">Create Category</button>
+			<hr>
+			<label id="result">The operation's result will display here<br></label>
+		</section>
+
+		<section id = "updateCategory" >
+			<h1>Update Category</h1>
+			<hr>
+			<br>
+			<label>Please enter a Category ID: </label>
+ 			<input type="text" id="CIDUpdateCategory">
+ 			<br>
+ 			<label>Please enter the Category Description: </label>
+ 			<input type="text" id="CDescriptionUpdateCategory">
+ 			<br>
+ 			<hr>
+ 			<button onclick="updateCategory()" id="updateCategory">Update Category</button>
+ 			<hr>
+ 			<label id="result">The operation's result will display here<br></label>
+		</section>
+
+		<section id = "deleteCategory">
+			<label>Please enter a Category ID: </label>
+ 			<input type="text" id="CIDDeleteCategory">
+ 			<br>
+ 			<hr>
+ 			<button onclick="deleteCategory()" id="deleteCategory">Delete Category</button>
+ 			<hr>
+ 			<label id="result">The operation's result will display here<br></label>
+		</section>
+
+		<section id = "listCategory">
+			<button onclick="listCategory()" id="listCategory">Get All Categories</button>
+			<hr>
+			<label id="result"></label>
+		</section>
+
+		<section id = "aboutMe">
+			<p>My name is Eduardo Castro. I'm from Brazil. I have nothing to say here.</p>
+		</section>
+	</body>
+
+	<footer>
+                <br>
+                Made By
+                <br>
+                Eduardo de Oliveira Castro
+                <br>
+                eduardocastro91@gmail.com
+                <br>
+                edc@uab.edu
+                <br>
+    </footer>
+
+</html>
